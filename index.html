@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="backspace_white_24dp.svg">
+  </head>
+  <body>
+    <div class="navContainer">
+      <h1 class="titleTasksManager">Task<span class="spanText">Mine<span></h1>
+        <span class="zeroSpan, span">0</span>
+        <span>/40</span>
+    </div>
+    <div class="motivation">
+      <button onclick="startMotivation()" class="yourMotivation">Desmotivado?</button>
+    </div>
+    <div class="divEdit">
+      <p class="editText"></p>
+    </div>
+    
+    
+    <main class="mainContainer">
+      <input oninput="updateText(this)" type="text" id="inputTask" placeholder="O que vamos fazer hoje?" maxlength="40">
+      
+      <button class="alignAllItems" onclick="addTasks()"
+      id="buttonAdd">+</button>
+    
+
+      </div>
+      <div class="alert">
+        <p class="textAlert">Digite algo</p>
+      </div>
+      
+    </main>
+    <div class="containerResults">
+        
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>

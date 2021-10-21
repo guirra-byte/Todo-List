@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,400;1,600&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+  --one-color:#000;
+  --other-color:#fca311;
+  --last-color:#3a86ff;
+  --new-color:#ff006e;
+  --place-color:#ffbe0b;
+  --green-color:#00ff95;
+  --help-color: #6e64ff;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--new-color); 
+  max-width: 1920px;
+  max-height: 1080px;
+}
+.newLister{
+  background: var(--place-color);
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: .5rem;
+  font-weight: 600;
+  font-size: 20px;
+  list-style: none;
+  height: 50px;
+  width: 30rem;
+  margin-left: 35rem;
+  margin-top: 2rem;
+  transition: all .4s;
+  box-shadow: 5px 5px 1px black;
+}
+.allTasks{
+  background: var(--one-color);
+  display: flex;
+  position: fixed;
+  height: 25vh;
+  width: 200px;
+  margin-left: .5rem;
+  border-radius: .2rem 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.alignAllItems{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 4px 4px 1px black;
+}
+#inputTask{
+  margin-left: 35rem;
+  width: 30rem;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 1px black;
+  transition: all .2s;
+}
+#inputTask:hover{
+  box-shadow: 3px 3px 1px black;
+}
+.span{
+  margin-left: 52rem;
+}
+#title{
+  color: var(--place-color);
+  top: 0;
+  margin-left: 1rem;
+  position: absolute;
+  display: inline-flex;
+}#span{
+  font-weight: 100;
+  font-style: italic;
+}
+.material-icons-outlined{
+  position: absolute;
+  background: #3a86ff;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: .5rem;
+  margin-top: .7rem;
+  margin-right: 10rem;
+}
+.othersInfo{
+  margin-top: 5rem;
+  width: 230px;
+  height: 90px;
+}
+.img{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  padding-right: .1rem;
+  margin-right: .2rem;
+}
+.info{
+  height: 30px;
+  width: 150px;
+  background: var(--last-color);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-radius: .5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  transition: all .6s;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+.info:hover{
+  background: var(--new-color);
+  color: black;
+  width: 185px;
+  border-radius: .5rem 0 0 .5rem;
+}
+.addInput{
+  width: 30px;
+  margin-left: 50rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+}
+#resetImg{
+  transform: rotate(180deg);
+  margin-right: .5rem;
+}
+.alignAllItems{
+  width: 75px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  border-radius: .5rem;
+  font-weight: 500;
+  background: #fca311;
+  color: white;
+  transition: all .6s;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.alignAllItems:hover{
+  background: #ffd900;
+  color: black;
+}
+.titleTasksManager{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 120px;
+  margin-left: 30rem;
+}
+.spanText{
+  font-weight: 100;
+  font-style: italic;
+}
+.alert{
+  background: var(--last-color);
+  color: white;
+  width: 15rem;
+  height: 40px;
+  position: absolute;
+  display: none;
+  right: 0;
+  margin-right: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 1px var(--one-color);
+}
+.transitionEffect{
+  transition: all .5s;
+}
+.changeFilter{
+  border: none;
+  outline: none;
+  background: var(--one-color);
+  color: white;
+  border-radius: .3rem;
+  height: 50px;
+  margin-left: 1rem;
+  width: 150px;
+}
+.imgSearch{
+  background: var(--last-color);
+  height: 40px;
+  width: 40px;
+  border-radius: .5rem;
+  position: absolute;
+  margin-top: .3rem ;
+  margin-left: 1rem;
+  box-shadow: 4px 4px 1px black;
+  transition: all .6s;
+  cursor: pointer;
+  border: none;
+}
+.imgSearch:hover{
+  background: var(--other-color);
+}
+.checkButton{
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: .5rem;
+  transition: all .2s;
+  cursor: pointer;
+  position: relative;
+  background: var(--green-color);
+  margin-left: 57rem;
+  margin-top: -1rem;
+  box-shadow: 4px 4px 1px black;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  }.checkButton:hover{
+    background: #00b7ff;
+    box-shadow: 2px 2px 1px black;
+  }
+  .deleteBtn{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: .5rem;
+    transition: all .2s;
+    cursor: pointer;
+    background: var(--help-color);
+    box-shadow: 4px 4px 1px black;
+    margin-left: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -2.5rem;
+  }
+  .deleteBtn:hover{
+    background: #bdbdbd;
+    box-shadow: 2px 2px 1px black;
+  }
+  .editList{
+    opacity: 70%;
+  }
+  .editList:after{
+    content: "Completed";
+    display: block;
+    position: relative;
+    background: var(--one-color);
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: .5rem;
+  }
+  .changeBackground{
+    background: var(--green-color);
+  }
+
+  .todo{
+    display: none;
+  }
+  .check{
+    opacity: 70%;
+  }
+  .check::after{
+    animation-name: afterCheck;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+
+    content: "Completed";
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 130px;
+    border-radius: .5rem;
+    background: var(--one-color);
+    color: white;
+    margin-left: 37rem;
+    margin-top: -2rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+@keyframes afterCheck{
+  from{
+    background: var(--help-color);
+    
+  }to{
+    background: var(--one-color);
+  
+  }
+}
+.animationAlert{
+  animation-name: alertChange;
+  animation-duration: 5s;
+}
+.navContainer{
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.zeroSpan{
+  display: block;
+}
+.minuteTimer{
+  border: none;
+  border-radius: .3rem;
+  background: var(--one-color);
+  color: white;
+  font-weight: 500;
+  height: 30px;
+  outline: none;
+}
+.minutesNumber{
+  font-weight: 300;
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.motivation{
+  position: fixed;
+  height: 120px;
+  width: 230px;
+  background: var(--place-color);
+  border-radius: .5rem;
+  box-shadow: 6px 6px 1px black;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  top: 0;
+}
+.yourMotivation{
+  width: 130px;
+  height: 30px;
+  border: none;
+  font-weight: 400;
+  background: var(--green-color);
+  box-shadow: 5px 5px 1px black;
+  border-radius: .3rem;
+  cursor: pointer;
+  transition: all .4s;
+  font-size: 15px;
+}
+.yourMotivation:hover{
+  background: var(--one-color);
+  color: white;
+  box-shadow: 2px 2px 1px white;
+}
+.divEdit{
+  background: var(--last-color);
+  border-radius: .3rem;
+  box-shadow: 6px 6px 1px black;
+  height: 150px;
+  width: 260px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  position: absolute;
+  margin-top: 11rem;
+  margin-left: 1rem;
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  
+}
+.editText{
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.editDisplay{
+  display: flex;
+}

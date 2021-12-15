@@ -1,4 +1,4 @@
-# Todo-List
+# Todo-List : HTML - CSS - JavaScript
 Programador Br course challenge, intermediate JavaScript module
 
 <div align="center">

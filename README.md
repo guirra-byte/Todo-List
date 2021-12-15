@@ -2,7 +2,7 @@
 Programador Br course challenge, intermediate JavaScript module
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/77081114/138371898-fd1422e9-041b-4374-9d83-53f61a4e964a.png" width="300px" height="300px" />
+<img src="https://user-images.githubusercontent.com/77081114/146275203-1881be1d-8650-48ed-b2d7-e203b9d8bf4d.png" width="1000px" height="500px" />
   </div>
 
 
